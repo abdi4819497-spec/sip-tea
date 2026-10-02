@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100c09">
+<title>SIP TEA — Your Daily Drink</title>
+<meta name="description" content="SIP TEA — Boba Tea, Milk Tea and Fruit Tea in Jigjiga Yar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader" class="loader">
+  <div class="loader-logo"><img src="images/logo.png" alt="SIP TEA"></div>
+  <div class="loader-title">SIP TEA</div>
+  <div class="loader-sub">YOUR DAILY DRINK</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<header class="header">
+  <a class="brand" href="#home">
+    <img src="images/logo.png" alt="SIP TEA logo"><span>SIP TEA</span>
+  </a>
+  <nav class="nav">
+    <a class="active" href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☼</button>
+    <button class="wa-btn" id="headerWa">◉ WhatsApp</button>
+    <button class="cart-btn" id="openCart">Cart <b id="cartCount">0</b></button>
+  </div>
+  <button class="mobile-menu" id="mobileMenu">☰</button>
+</header>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a>
+</div>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="eyebrow gold"><span></span> BOBA TEA • MILK TEA • FRUIT TEA</div>
+    <h1>Welcome to<br><strong>SIP TEA</strong></h1>
+    <div class="script">Your Daily Drink</div>
+    <p>Fresh boba, creamy milk tea and refreshing fruit tea — made for your everyday moments.</p>
+    <div class="hero-info">
+      <div><i>⌖</i><span>Jigjiga Yar near<br>Hotel Guled / Next to Baby World</span></div>
+      <div><i>◷</i><span>Open<br>8:00 AM – 12:00 AM</span></div>
+      <div><i>⌕</i><span>Contact<br>639 319 059<br>657 320 085</span></div>
+    </div>
+    <div class="hero-actions">
+      <a class="btn gold-btn" href="#menu">View Menu <span>↗</span></a>
+      <button class="btn outline-light" id="heroWa">◉ Chat on WhatsApp</button>
+    </div>
+  </div>
+  <div class="hero-product">
+    <img src="images/classic-milk-tea.jpg" alt="SIP TEA milk tea">
+    <div class="hero-badge"><span>01</span><b>CLASSIC<br>MILK TEA</b></div>
+  </div>
+  <div class="hero-store"><img src="images/storefront.jpg" alt="SIP TEA storefront"></div>
+  <div class="hero-dots"><span class="on"></span><span></span><span></span></div>
+</section>
+
+<section class="categories">
+  <button data-filter="boba"><img src="images/assorted-boba.jpg"><span><b>Boba Tea</b><small>Chewy & Fun →</small></span></button>
+  <button data-filter="milk"><img src="images/classic-milk-tea.jpg"><span><b>Milk Tea</b><small>Creamy & Delicious →</small></span></button>
+  <button data-filter="fruit"><img src="images/mango-fruit-tea.jpg"><span><b>Fruit Tea</b><small>Fresh & Natural →</small></span></button>
+  <button data-filter="special"><img src="images/mango-special.jpg"><span><b>Specials</b><small>Unique Flavors →</small></span></button>
+</section>
+
+<section class="menu-section" id="menu">
+  <div class="menu-head">
+    <div><div class="eyebrow"><span></span> OUR MENU</div><h2>Popular <em>Drinks</em></h2><p>Fresh ingredients, premium taste, always.</p></div>
+    <div class="filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="milk">Milk Tea</button>
+      <button data-filter="boba">Boba Tea</button>
+      <button data-filter="fruit">Fruit Tea</button>
+      <button data-filter="special">Specials</button>
+    </div>
+  </div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section class="story" id="about">
+  <div class="story-photo"><img src="images/five-drinks.jpg" alt="SIP TEA drinks"></div>
+  <div class="story-copy">
+    <div class="eyebrow gold"><span></span> THE SIP TEA WAY</div>
+    <h2>Life is better<br>with <em>Boba.</em></h2>
+    <p>From classic milk tea to bright fruit blends, SIP TEA is made for good drinks, good conversations and good vibes.</p>
+    <div class="perks">
+      <div><strong>◈</strong><span><b>Fresh Ingredients</b><small>Always Fresh</small></span></div>
+      <div><strong>♡</strong><span><b>Premium Taste</b><small>Quality in Every Cup</small></span></div>
+      <div><strong>☻</strong><span><b>Friendly Service</b><small>Your Happiness Matters</small></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div>
+    <div class="eyebrow gold"><span></span> COME THROUGH</div>
+    <h2>Visit <em>Us</em></h2>
+  </div>
+  <div class="visit-photo"><img src="images/storefront.jpg" alt="SIP TEA storefront"></div>
+  <div class="visit-details">
+    <div><span>LOCATION</span><b>Jigjiga Yar near Hotel Guled</b><small>Next to Baby World</small></div>
+    <div><span>OPENING HOURS</span><b>8:00 AM – 12:00 AM</b><small>Open every day</small></div>
+    <div><span>CONTACT</span><b>639 319 059</b><small>657 320 085</small></div>
+    <div class="visit-actions"><a href="tel:+252639319059" class="btn gold-btn">Call SIP TEA ↗</a><button class="btn outline-light" id="visitWa">WhatsApp ↗</button></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-brand"><img src="images/logo.png" alt=""><div><b>SIP TEA</b><small>YOUR DAILY DRINK</small></div></div>
+  <div>© 2026 SIP TEA · Jigjiga Yar, Hargeisa</div>
+  <a href="#home">Good Drinks, Good Vibes ↑</a>
+</footer>
+
+<!-- Details modal -->
+<div class="modal-backdrop" id="detailsBackdrop">
+  <article class="details-modal">
+    <button class="close" id="closeDetails">×</button>
+    <div class="details-image"><img id="detailImage" src="" alt=""></div>
+    <div class="details-copy">
+      <div class="eyebrow"><span></span> SIP TEA FAVORITE</div>
+      <h2 id="detailName"></h2>
+      <div class="detail-price" id="detailPrice"></div>
+      <p id="detailDescription"></p>
+      <div class="ingredients"><h4>Ingredients</h4><div id="detailIngredients"></div></div>
+      <div class="options"><h4>Size</h4><div id="sizeOptions"></div></div>
+      <div class="details-bottom">
+        <div class="quantity"><button id="qtyMinus">−</button><b id="detailQty">1</b><button id="qtyPlus">+</button></div>
+        <button class="btn gold-btn add-detail" id="addDetail">Add to Cart <span>+</span></button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<!-- Cart drawer -->
+<div class="cart-backdrop" id="cartBackdrop">
+  <aside class="cart-drawer">
+    <div class="cart-head"><div><span>YOUR ORDER</span><h3>Cart</h3></div><button class="close" id="closeCart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty">Your cart is empty.<br><small>Tap a drink to view details and add it.</small></div>
+    <div class="cart-foot">
+      <div><span>Subtotal</span><b id="cartTotal">$0.00</b></div>
+      <button class="btn gold-btn" id="whatsappOrder">Order via WhatsApp ↗</button>
+      <button class="clear" id="clearCart">Clear cart</button>
+    </div>
+  </aside>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
